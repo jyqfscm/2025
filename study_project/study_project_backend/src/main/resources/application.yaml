@@ -1,0 +1,40 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/database1?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: ldj95333
+  mail:
+    host: smtp.163.com
+    username: xiaozhi13142021@163.com
+    password: TNGIBWYZODQZBWEJ
+    port: 465
+    properties:
+      from: xiaozhi13142021@163.com
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+server:
+  servlet:
+    context-path: /
+  port: 8080
+  address: 0.0.0.0
+aliyun:
+  oss:
+    end-point: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5t77jmJxoVKoF1FRjJMi
+    access-key-secret: dZRtYoX56grRhjJc6pLQnRt18R84At
+    bucket-name: my-face-home
+
